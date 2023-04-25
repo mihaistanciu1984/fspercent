@@ -5,5 +5,5 @@ sed -i '1d' /tmp/fsusage
 cat /tmp/fsusage | while read line 
 do
    #echo $line
-   echo $line | awk '{print $5}' | sed 's/.$//'
+   echo $line | awk '{print $6}' | sed 's/.$//'
 done
